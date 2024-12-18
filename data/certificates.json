@@ -1,0 +1,5 @@
+[
+    { "name": "Certificate 1", "issuer": "Udemy", "link": "certificates/certificate1.pdf" },
+    { "name": "Certificate 2", "issuer": "Coursera", "link": "certificates/certificate2.pdf" }
+  ]
+  

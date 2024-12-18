@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; margin: 0; }
+header { background-color: #004080; color: white; padding: 1rem; text-align: center; }
+nav ul { display: flex; justify-content: center; list-style: none; }
+nav ul li { margin: 0 1rem; }
+a { color: white; text-decoration: none; }
+h2 { color: #004080; }
+main { padding: 1rem; }
+.project-card, .certificate-card {
+    border: 1px solid #ddd; margin: 1rem auto; padding: 1rem; width: 300px; text-align: center;
+}
