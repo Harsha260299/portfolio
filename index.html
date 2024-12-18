@@ -1,35 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Showcasing my work and experience."/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo"><a href="#home">MyBrand</a></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="theme-toggle" aria-label="Toggle Theme">🌙</button>
         </nav>
     </header>
 
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div id="projects-container"></div>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero full-height" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">I Build Beautiful <br> & Engaging Web Experiences.</h1>
+            <p class="hero-subtitle">A [Your Profession], turning ideas into digital reality.</p>
+            <a href="#work" class="btn-primary">View My Work</a>
+        </div>
+    </section>
 
-        <section id="certificates">
-            <h2>Certificates</h2>
-            <div id="certificates-container"></div>
-        </section>
-    </main>
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="section-content">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-text">
+                I'm a [Your Role], specializing in creating visually appealing and user-friendly digital solutions.
+                With a keen eye for detail and a passion for innovation, I aim to deliver top-quality results and 
+                seamless user experiences.
+            </p>
+        </div>
+    </section>
 
-    <footer>&copy; 2024 My Portfolio</footer>
-    <script src="script.js"></script>
+    <!-- Work Section -->
+    <section class="section work" id="work">
+        <div class="section-content">
+            <h2 class="section-title">My Work</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="path/to/your-project-image1.jpg" alt="Project 1" />
+                    <h3>Project One</h3>
+                    <p>Short description of the project and the technologies used.</p>
+                    <a href="https://example.com" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+                <div class="card">
+                    <img src="path/to/your-project-image2.jpg" alt="Project 2" />
+                    <h3>Project Two</h3>
+                    <p>Another brief description explaining the project highlights and uniqueness.</p>
+                    <a href="https://example.com" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="section-content">
+            <h2 class="section-title">Services</h2>
+            <div class="grid">
+                <div class="service-item">
+                    <h3>Web Design</h3>
+                    <p>Crafting beautiful, responsive, and intuitive user interfaces.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Development</h3>
+                    <p>Bringing your ideas to life with clean, efficient code and modern best practices.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Branding</h3>
+                    <p>Helping you establish a strong, consistent brand presence online.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="section-content">
+            <h2 class="section-title">Contact Me</h2>
+            <p>Interested in working together or have a question? Reach out to me at:</p>
+            <p><a href="mailto:yourname@example.com">yourname@example.com</a></p>
+            <ul class="social-links">
+                <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Your Name. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
